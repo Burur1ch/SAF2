@@ -1,12 +1,13 @@
-import Header  from "../modules/Header";
+import { Header } from "../modules/Header";
 
-const Layout = ({children}:{ children: React.ReactNode})=>{
-        <>
-            <Header />
-            {children}
-            <div className=""></div>
-        </>
-    );
-}
+const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
+  return (
+    <div>
+      <Header />
+      {children}
+      <div className=""></div>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
